@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@mipmap/bg"
+    tools:context=".activity.MainActivity">
+
+    <ScrollView
+        android:background="#80000000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageButton
+                    android:id="@+id/bn_clang"
+                    android:layout_margin="4dp"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="#009688"
+                    android:src="@drawable/ic_import_contacts"
+                    android:onClick="onButtonClicked"/>
+                <ImageButton
+                    android:id="@+id/bn_book"
+                    android:layout_margin="4dp"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="#FFEB3B"
+                    android:src="@drawable/ic_card_travel"
+                    android:onClick="onButtonClicked"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageButton
+                    android:id="@+id/bn_stamp"
+                    android:layout_margin="4dp"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="#F44336"
+                    android:src="@drawable/ic_local_see"
+                    android:onClick="onButtonClicked"/>
+                <ImageButton
+                    android:id="@+id/bn_map"
+                    android:layout_margin="4dp"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="#2196F3"
+                    android:src="@drawable/ic_place"
+                    android:onClick="onButtonClicked"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

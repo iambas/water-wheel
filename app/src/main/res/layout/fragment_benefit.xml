@@ -1,0 +1,32 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@mipmap/img_benefit"
+                android:scaleType="fitXY"
+                android:layout_width="350dp"
+                android:layout_height="250dp" />
+            <TextView
+                android:id="@+id/ct_benefit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:lineSpacingExtra="4dp"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:text="" />
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
